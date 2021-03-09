@@ -15,9 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Login
 Route::get('/login', 'AuthController@getLogin');
 Route::post('/login', 'AuthController@postLogin');
 
-//Auth::routes();
+
+
+//SignUp
+
+Route::get('/signup', 'SignupController@getSignup');
+Route::post('/signup', 'SignController@postSignup');
+
+
+//Devision Management
 
 //Route::get('/home', 'HomeController@index')->name('home');
+

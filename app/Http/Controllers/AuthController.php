@@ -14,7 +14,7 @@ class AuthController extends Controller
 
     function postLogin(Request $request)
     {
-        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+        if (Auth::attempt(['email' => $request->email])) {
             return view('dashboard');
         } else {
             return back()->withInput();
