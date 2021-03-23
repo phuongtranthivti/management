@@ -23,4 +23,6 @@ Route::post('/login', 'AuthController@postLogin');
 //Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('/login', 'AuthController@postLogin');
+
+Route::post('/login', 'AuthController@postLogin');
 Route::post('/login', 'AuthController@postLogin');
