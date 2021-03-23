@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="{{asset('')}}">
-    <title>Management</title>
+    <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
 
 </head>
@@ -17,12 +17,12 @@
     <div id="body">
         <div id="detail_body">
             <label>Email</label>
-            <input type="email" name="email" placeholder="Please enter password" value="{{ old('email') }}">
-            <span style="color: red">hih</span>
+            <input type="email" name="email" placeholder="Please enter email" value="{{ old('email') }}">
+            <span style="color: red"> Email is required</span>
             <br> <br>
             <label>Password</label>
             <input type="password" name="password" placeholder="Please enter password">
-            <span style="color: red">hih</span>
+            <span style="color: red">Password is required</span>
             <br>
             <br>
             <button type="submit" style="background: #3c763d">Login</button> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
