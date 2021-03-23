@@ -15,9 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', 'AuthController@getLogin');
-Route::post('/login', 'AuthController@postLogin');
+
+// Login
+Route::get('/login1', 'AuthController@getLogin');
+Route::post('/login1', 'AuthController@postLogin');
+
+// SignUp
+Route::get('/signup', 'AuthController@getLogin');
+Route::post('/signup', 'AuthController@postLogin');
 
 //Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+//abcds
